@@ -1,0 +1,53 @@
+/* shadow card of what is left for less jumps in the animation when clicked */
+.continer{
+    height: 250px;
+    width: 200px;
+    margin: 20px;
+}
+/* card continer */
+.card{
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    transition: all .3s ease-in-out;
+}
+
+/* on hover effect for the cards */
+.card:hover{
+    transform: scale(1.2);
+}
+.active{
+    animation: bigInfoCard .4s ease-in-out;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 25%;
+    background-color: yellow;
+    height: 85vh;
+    width: 50vw;
+    transform-origin: center;
+}
+
+/* card header disain */
+.headline{
+    color: brown;
+}
+
+/* card animation when clicked from small to big */
+@keyframes bigInfoCard {
+    0% {
+        position: absolute;
+        height: 250px;
+        width: 200px;
+        left: 42vw;
+    }
+    40%{
+        height: 250px;
+        width: 200px;
+        transform: translate(40% , 35vh);
+    }
+    100% {
+        height: 85vh;
+        width: 50vw;
+    }
+  }
