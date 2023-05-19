@@ -1,9 +1,0 @@
-.continer{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
